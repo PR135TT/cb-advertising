@@ -497,6 +497,10 @@ header {
 
 /* Dropdown content */
 .dropdownmenu {
+	width: 100;
+	position:absolute;
+	max-width:100;
+	overflow-x:hidden;
     display: none; /* Hidden by default */
     position: absolute;
     background-color: #f1f1f1;
