@@ -480,6 +480,10 @@ header {
     position: relative;
     display: inline-block;
   }
+  
+.dropdown:active .dropdownmenu {
+	display: block;
+}
 
 /* Button */
 .dropbtn {
