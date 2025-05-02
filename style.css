@@ -500,6 +500,7 @@ header {
     .sidebar {
         display: block;
         transform: translateX(-100%);
+        transition: 0.3s ease-in-out;
     }
 }
 
