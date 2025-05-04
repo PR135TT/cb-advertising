@@ -43,6 +43,7 @@ header {
 }
 
 .logo img {
+	border-radius:50%;
 	width: 100%;
 	height: auto;
 }
@@ -469,6 +470,10 @@ header {
 	margin:50px;
 	height:230px;
 	align-content:center;
+  }
+  
+  .Explore ul li {
+	  
   }
 
 /* Hide sidebar by default */
