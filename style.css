@@ -516,14 +516,9 @@ header {
    
   .name{
 	  	 padding:10px;
-	 margin:10px;
+	   margin:10px;
   }
-  
-  #choose {
-	  padding;10px;
-	  margin:10px
-  }
-}
+
 
 #menu-toggle {
     display: none; /* This removes the checkbox from view */
@@ -563,14 +558,16 @@ header {
 
 .menu-item:active ~ #menu-toggle {
     display: none;
+ }
 }
 
 #head{
+	margin-top:20px;
 	text-align:center;
 }
 
 #reviews{
-	border-bottom:3px solid green;
+	border-bottom:3px solid yellow;
 	display:inline-block;
 }
 
@@ -582,17 +579,17 @@ header {
 }
 
 .review1 {
-	background-color: #00a99d;
+	background-color: yellow;
 	border:3px solid black;
 }
 
 .review2 {
-	background-color: #00a99d;
+	background-color: yellow;
 	border:3px solid black;
 }
 
 .review3 {
 	border:3px solid black;
-	background-color: #00a99d;
+	background-color: yellow;
 }
 
