@@ -476,7 +476,7 @@ header {
   }
   
   .Explore ul li {
-	  
+	  list-style-type:none;
   }
 
 /* Hide sidebar by default */
@@ -518,7 +518,11 @@ header {
 	  	 padding:10px;
 	 margin:10px;
   }
-
+  
+  #choose {
+	  padding;10px;
+	  margin:10px
+  }
 }
 
 #menu-toggle {
