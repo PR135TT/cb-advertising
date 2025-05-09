@@ -133,7 +133,7 @@ header {
 }
 
 .subtitle {
-	color: #00a99d;
+	color: yellow;
 	margin-bottom: 15px;
 	font-size: 18px;
 	font-weight: 600;
@@ -151,7 +151,7 @@ header {
 	font-size: 18px;
 }
 
-.btn {
+.btn-primary {
 	display: inline-block;
 	padding: 12px 25px;
 	border-radius: 5px;
@@ -162,14 +162,14 @@ header {
 }
 
 .btn-primary {
-	background-color: #00a99d;
+	background-color: yellow;
 	color: #fff;
-	border: 2px solid #00a99d;
+	border: 2px solid red;
 }
 
-.btn-primary:hover {
-	background-color: transparent;
-	color: #00a99d;
+.btn-primary a:hover {
+	background-color: red;
+	border:2px solid yellow;
 }
 
 /* About Section */
@@ -192,7 +192,7 @@ header {
 	transform: translateX(-50%);
 	width: 80px;
 	height: 3px;
-	background-color: #00a99d;
+	background-color: yellow;
 }
 
 .about-content {
@@ -254,13 +254,13 @@ header {
 }
 
 .card-dark {
-	background-color: #1a2232;
-	color: #fff;
+	background-color: yellow;
+	color: red;
 }
 
 .card-teal {
-	background-color: #00a99d;
-	color: #fff;
+	background-color: red;
+	color: yellow;
 }
 
 .value-icon {
@@ -320,8 +320,8 @@ header {
 .service-card {
 	display: inline-block;
 	width: 32%;
-	background-color: #1a2232;
-	color: #fff;
+	background-color: yellow;
+	color: red;
 	border-radius: 10px;
 	padding: 30px;
 	margin-bottom: 30px;
@@ -345,7 +345,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 5px;
-	background-color: #00a99d;
+	background-color: red;
 	transition: height 0.3s ease;
 }
 
@@ -466,9 +466,9 @@ header {
 }
 
 .Explore {
-	background: #1a2232;
+	background: yellow;
 	border-radius:20px;
-	color:White;
+	color:red;
 	padding:30px;
 	margin:50px;
 	height:230px;
