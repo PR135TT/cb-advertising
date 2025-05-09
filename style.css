@@ -373,7 +373,7 @@ header {
 	left: 0;
 	width: 50px;
 	height: 2px;
-	background-color: #00a99d;
+	background-color: red;
 }
 
 .service-description {
@@ -381,7 +381,7 @@ header {
 }
 
 .read-more {
-	color: #00a99d;
+	color: red;
 	display: flex;
 	align-items: center;
 	font-weight: 600;
@@ -580,16 +580,16 @@ header {
 
 .review1 {
 	background-color: yellow;
-	border:3px solid black;
+	border:3px solid red;
 }
 
 .review2 {
 	background-color: yellow;
-	border:3px solid black;
+	border:3px solid red;
 }
 
 .review3 {
-	border:3px solid black;
+	border:3px solid red;
 	background-color: yellow;
 }
 

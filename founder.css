@@ -1,0 +1,13 @@
+html, body {
+ height:100%;
+ margin:0;
+}
+
+#founderImage {
+	background-position:center;
+    background-image:url("Cb-founder.jpg");
+	background-size:contain;
+	background-repeat:no-repeat;
+	width:100%;
+	height:100vh;
+}
