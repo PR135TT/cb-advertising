@@ -15,6 +15,7 @@ body {
   width: 50%;
   background: url("Cb-founder.jpg") no-repeat center center;
   background-size: cover;
+  border-radius:50%;
 }
 
 .founder-text {
