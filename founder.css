@@ -59,7 +59,7 @@ body {
   .founder-image {
 	  min-height:800px;
 	  height:300px;
-	  margin: 0 auto;
+	  margin:auto;
 	  aspect-ratio: 1 / 1;
 	  border-radius:0;
   }
