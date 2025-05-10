@@ -463,20 +463,6 @@ header {
   }
 }
 
-.Explore {
-	background: yellow;
-	border-radius:20px;
-	color:red;
-	padding:30px;
-	margin:50px;
-	height:230px;
-	align-content:center;
-  }
-  
-  .Explore ul li {
-	  list-style-type:none;
-  }
-
 /* Hide sidebar by default */
 .sidebar {
     display: none;
@@ -577,17 +563,34 @@ header {
 }
 
 .review1 {
-	background-color: yellow;
+	background-color: white;
 	border:3px solid red;
 }
 
 .review2 {
-	background-color: yellow;
+	background-color: white;
 	border:3px solid red;
 }
 
 .review3 {
 	border:3px solid red;
-	background-color: yellow;
+	background-color: white;
 }
+
+/*icons*/
+.visionIcon {
+	width:60px;
+	height:60px;
+}
+
+.goalIcon {
+	width:60px;
+	height:60px;
+}
+
+.missionIcon {
+	width:60px;
+	height:60px;
+}
+
 
