@@ -54,6 +54,12 @@ body {
     width: 80%;
   }
   
+  img{
+	  align-items:center;
+	  display:flex;
+	  justify-content:center;
+  }
+  
   .founder-image {
 	  display:flex;
 	  height:auto;
