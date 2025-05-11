@@ -13,8 +13,6 @@ body {
 
 .founder-image {
   width: 50%;
-  background: url("Cb-founder.jpg") no-repeat center center;
-  background-size: cover;
   border-radius:50%;
 }
 
@@ -57,13 +55,13 @@ body {
   }
   
   .founder-image {
-	  min-height:600px;
-	  height:400px;
-	  margin:auto;
+	  display:flex;
+	  height:auto;
+	  width:auto;
 	  border-radius:50%;
 	  justify-content:center;
-	  width:600px;
-	  
+	  align-items:center;
+	  height:100vh;
   }
 
   .founder-text {
