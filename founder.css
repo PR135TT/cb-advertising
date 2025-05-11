@@ -57,11 +57,13 @@ body {
   }
   
   .founder-image {
-	  min-height:800px;
-	  height:300px;
+	  min-height:600px;
+	  height:400px;
 	  margin:auto;
 	  aspect-ratio: 1 / 1;
-	  border-radius:0;
+	  border-radius:50%;
+	  justify-content:center;
+	  width:600px;
   }
 
   .founder-text {
