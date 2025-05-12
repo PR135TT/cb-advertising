@@ -563,20 +563,12 @@ header {
 	display-style:none;
 }
 
-.review1 {
+.review1, .review2, .review3 {
 	border:3px solid red;
-	background-color: yellow;
+	background-color: white;
+	color:black;
 }
 
-.review2 {
-	border:3px solid red;
-	background-color: yellow;
-}
-
-.review3 {
-	border:3px solid red;
-	background-color: yellow;
-}
 
 /*icons*/
 .visionIcon {
