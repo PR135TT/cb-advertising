@@ -1,17 +1,30 @@
-document.getElementById('nav-toggle').addEventListener('click', function(e) {
-  // Prevent the link's default behavior
-  e.preventDefault();
-  
-  // Select all nav items that are initially hidden
-  const hiddenItems = document.querySelectorAll('.nav-hidden');
+  const flierImages = [
+    "womenTableDis.jpg",
+    "laptop.jpg",
+    "girlTyping.jpg"
+  ];
 
-  // Toggle the display property for each hidden nav item
-  hiddenItems.forEach(item => {
-    // Using classList.toggle is also an option if you prefer toggling a class.
-    if (item.style.display === "none" || item.style.display === "") {
-      item.style.display = "flex";  // or "block" based on your layout
-    } else {
-      item.style.display = "none";
-    }
-  });
-});
+  let flierIndex = 0;
+  const flierImg = document.getElementById("flier-image");
+  const leftArrow = document.querySelector(".flier-arrow.left");
+  const rightArrow = document.querySelector(".flier-arrow.right");
+
+  function showFlier(index) {
+    const image = document.getElementById("flier-image");
+    flierIndex = (index + flierImages.length) % flierImages.length;
+    image.src = flierImages[flierIndex];
+  }
+  
+  leftArrow.addEventListener("click", () => showFlier(flierIndex - 1));
+  rightArrow.addEventListener("click", () => showFlier(flierIndex + 1));
+
+  function changeSlide(direction) {
+    showFlier(flierIndex + direction);
+  }
+
+  // Auto-change image every 1 second
+  //setInterval(() => {
+	  //changeSlide(1.5);
+  //}, 1000);
+  // Optional: auto-play every 3s
+  // setInterval(() => changeSlide(1), 3000);

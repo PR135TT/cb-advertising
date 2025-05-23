@@ -249,9 +249,48 @@ a {
 }
 
 /*Styling for Flier*/
-#flier  {
-	background-color:blue;
+#flier {
+  position: relative;
+  height: 650px;
+  background-color: #001f2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+
+#flier img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.flier-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.flier-arrow.left {
+  left: 20px;
+}
+
+.flier-arrow.right {
+  right: 20px;
+}
+
+.flier-arrow:hover {
+  background-color: white;
+}
+
 
 /*Styling for Achievements*/
 #achievements  {
