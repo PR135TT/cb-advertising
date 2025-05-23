@@ -7,160 +7,150 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!--Did it-->
-<!-- Header & Navigation -->
- <header>
-  <div class="container nav-container">
-   <div class="logo">
-    <a href="#"><img src="cb-logo-two.png" alt="CBM-Logo"></a>
-     </div>
-	<input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="open-btn">☰ Menu</label>
-	 <div class = "sidebar">
-	   <ul class = "dropdownmenu">
-	     <li><a href="#" class="menu-item">Home</a></li>
-         <li><a href="#about" class="menu-item">About US</a></li>
-         <li><a href="#services" class="menu-item">Services</a></li>
-         <li><a href="chooseUs.html" class="menu-item">Why Choose Us</a></li>
-	     <li><a href="#reviews" class="menu-item">Reviews</a></li>
-	     <li><a href="contact.html" class="menu-item">Call to Action</a></li>
-	     <li><a href="founder.html" class="menu-item">Meet the Founder</a></li>
-	   </ul>
-	 </div>
-      <ul class="nav-menu">
-        <li onclick="hideSidebar()"><a href="#" class="active">Home</a></li>
-        <li onclick="hideSidebar()"><a href="#about">About US</a></li>
-        <li onclick="hideSidebar()"><a href="#services">Services</a></li>
-        <li onclick="hideSidebar()"><a href="chooseUs.html">Why Choose Us</a></li>
-	    <li onclick="hideSidebar()"><a href="#reviews">Review</a></li>
-	    <li onclick="hideSidebar()"><a href="contact.html">Call to Action</a></li>
-	    <li onclick="hideSidebar()"><a href="founder.html">Meet the Founder</a></li>
-      </ul>
-	 </div>
-   <div class="search-icon">
-    <i class="fas fa-search"></i>
+<!--Nav bar-->
+ <div id = "nav-bar">
+  <h1 class = "cbmsbs">CBMSBS</h1>
+   <div class = "logo">
+    <img src = "cb-logo-tw.png">
    </div>
-  </div>
- </header>    
-<!-- Hero Section -->
- <section class="hero">
-  <div class="container hero-content">
-   <div class="hero-text">
-    <h3 class="subtitle">We Don't Just Market - We help you sell more!</h3>
-    <h1 class="hero-title">CBM Sales & Biz Solution</h1>
-    <p class="hero-description">Helping struggling businesses revive sales, attract ready buyers and scale both locally and internationally</p>
-    <a href = "contact.html" class="btn-primary">Contact Us</a>
-   </div>
-   <div class="hero-image">
-    <img src="afroGirl.jpeg" alt="Girl with pink sweater using holding a laptop">
-   </div>
-  </div>
- </section> 
-<!-- About Section -->
- <section class="about" id="about">
-  <div class="container">
-   <h2 class="section-title">About CBM Sales & Biz Solutions</h2>
-    <div class="about-content">
-     <div class="about-text">
-      <p>CBM Sales & Biz Solution (CBMSBS) is a result driven-business support brand commited to helping entrepreneurs and business owners increase sales. We specialize in connecting sellers with active, ready-to-buy customers, reviving stagnant businesses and implementing straegies that deliver measurable growth. We don't just promote - we bring sales.</p>
-      <h3 style="margin-top: 30px; margin-bottom: 15px; font-size: 24px;">Our team</h3>
-      <p>Our team of experts brings years of experience and a deep understanding of the intricacies of financial markets and strategic consulting. We pride ourselves on providing personalized solutions that meet the unique needs of each client, helping them navigate the complexities of business growth.</p>
-     </div>
-     <div class="about-image">
-      <img src="womenTableDis.jpg" alt="Team members analyzing data">
-     </div>
-    </div>
-   </div>
- </section> 
-<!-- Values Section -->
- <section class="values">
-  <div class="container">
-   <h2 class="section-title">Our Core Principles</h2>
-    <div class="values-container">
-     <div class="value-card card-dark">
-      <div class="value-icon">
-       <i class="fas fa-calendar-check"></i>
-      </div>	 
-     <h3 class="value-title">Mission Statement <img src="mission.svg" alt="mission" class="missionIcon"></h3>
-     <p>To drive sales by connecting entrepreneurs with active, ready-to-buy customers, To revive stagnant brands and increase brand visibility and to support business growth through strategic solutions that fuel sales locally and internationally.</p>
-    </div>             
-    <div class="value-card card-dark">
-     <div class="value-icon">
-      <i class="fas fa-eye"></i>
-     </div>
-     <h3 class="value-title">Vision Statement <img src="vision.svg" alt="visionIcon" class="visionIcon"></h3>
-     <p>To become Africa's top sales-driven brand that empowers entrepreneurs by transforming struggling businesses into profitable ones through smart strategies and real buyer connections - locally and internationally.</p>
-    </div>           
-    <div class="value-card card-teal">
-     <div class="value-icon">
-      <i class="fas fa-star"></i>
-     </div>
-     <h3 class="value-title">Core Goals/Objectives <img src="goal.svg" alt="goals" class="goalIcon"></h3>
-     <ul class="value-list">
-      <li>Connect businesses with active, ready-to-buy customers locally and internationally.</li>
-      <li>Revive stagnant brands with practical sales-first strategies</li>
-      <li>Boost visibility and attract consistent buyers for SMEs</li>
-      <li>Deliver measurable sales growth through business solutions</li>
-      <li>Support Entrepreneurs with tools, leads and buyer matchmaking</li>
-      <li>Build a thriving community through partnerships, training and promotions</li>
-     </ul>
-    </div>
-   </div>
-  </div>
- </section> 
-<!-- Services Section -->
- <section class="services" id="services">
-  <div class="container">
-   <h2 class="section-title">Our Sales-Driven Services</h2>
-   <p class="services-tagline">What We Do</p>
-    <div class="services-container">
-     <div class="service-card">
-      <div>
-       <h3 class="service-title">Buyer-Seller connection</h3>
-       <p class="service-description">We match businesses with active, ready-to-buy customers</p>
-      </div>
-      <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-     </div>               
-     <div class="service-card">
-      <div>
-       <div class="service-icon">
-        <i class="fas fa-university"></i>
-       </div>
-       <h3 class="service-title">Sales Growth Support</h3>
-       <p class="service-description">Tailored strategies to help you attract and convert more buyers.</p>
-      </div>
-      <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-     </div>           
-     <div class="service-card">
-      <div>
-       <div class="service-icon">
-        <i class="fas fa-graduation-cap"></i>
-       </div>
-       <h3 class="service-title">Digital Visibility Boost</h3>
-       <p class="service-description">Targeted promotions that drive real sales, not just engagement</p>
-      </div>
-      <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-     </div>
-    </div>
-   </div>
- </section>
-<!--Review section-->
-<div id = "Review">
- <div id = "head"><!--For aligning the text in the center-->
-  <h1 id = "reviews">What Our Client says about us!</h1>
+  <ul>
+   <li><a href = "#">Home</a></li>
+   <li><a href = "#">Meet the Founder</a></li>
+   <li class = "nav-hidden"><a href = "#">About Us</a></li>
+   <li class = "nav-hidden"><a href = "#">Testimonials</a></li>
+   <li class = "nav-hidden"><a href = "#">Contact Us</a></li>
+   <li class = "nav-hidden"><a href = "#">Achievements</a></li>
+   <li class = "nav-item">
+    <a href = "#" id = "nav-toggle">Toggle</a>
+   </li>
+  </ul>
  </div>
- <ul>
-   <li class = "review1"> <h3 class = "name">@Adorable Outfit.Ng</h3>CB, I’ve been feeling lazy to drop this review — forgive me! Your ads didn’t just work, they exceeded my expectations. The results were far more than I imagined.
-   Your ad strategy brought impressive, significant growth — the turnout was massive!" I don’t know what kind of magic you're using, but whatever it is — don’t stop!
-   Honestly, I can't even account for all the millions I’ve made through your ads. The conversions are beyond anything I’ve ever seen — from Nigeria to Ghana to Cameroon, your ads delivered!
-   CBM, I owe you big time. Thank you for helping me scale massively. Keep doing what you're amazing at!</li>
-   <li class = "review2"><h3  class = "name">@Adorable Outfit.Ng</h3>Over 8 Million Naira in Sales Made! Take a good look at this review…
-   She made over 8 million in sales — just from our ads!Shocking? Yes.But this could be YOUR review next.
-   Let’s grow your business the CBM way.</li>
-   <li class = "review3"><h3  class = "name">@JEMI'S STORE</h3>She made over 10 MILLION NAIRA in sales — from ONE single client! Yes, you read that right. This can only be GOD. At CBMSBS, we don’t just run ads — we deliver wonders.
-   Call us the Sales Wonder. Your breakthrough could be next!</li>
- </ul>
-</div>
+<!--cbm header-->
+ <div id = "cbm">
+  <div class = "cbm1">
+   <h4 class = "weHelp">We don't just market - We help <br>you sell more</h4>
+   <h1 class = "csb">CBM Sales <br> & BIZ <br> Solution</h1>
+   <h4 class = "weHelp">Helping struggling businesses revive sales, attract ready<br> 
+       buyers and scale both nationally and internationally</h4>
+   <button class = "bcont">Contact Us</button>
+  </div>
+  <div class = "cbm2">
+   <image class = "image1" src = "girlTyping.jpg" alt = "girlTypingOnALaptop">
+  </div>
+ </div>
+ 
+<!--Mission, Vision statements-->
+ <div id = "statements">
+  <div class = "mission">
+   <h3>Mission Statement</h3>
+   <p>To drive sales by<br> connecting entrepreneurs<br> with active, ready-to-buy<br> customers, To revive<br> stagnant brands and<br>
+      increase brand visibility and<br> to support business growth<br> through strategic solutions<br> that fuel sales locally and<br> 
+	  internationally</p>
+  </div>
+  <div class = "vision">
+   <h3>Vision Statement</h3>
+   <p>To become Africa's top sales-<br>driven brand that empowers<br>entrepreneurs by<br>transforming struggling<br>businesses into profitable<br>
+      ones through smart strategies<br>and real buyer connections-<br>locally and internationally</p>
+  </div>
+  <div class = "core">
+   <h3>Core Goals/Objectives</h3>
+   <p>Connect businesses with active, ready-<br>to-buy customers locally and<br>internationally</p>
+   <p>Revive stagnant brands with practical<br>sales-first strategies</p>
+   <p>Boost visibility and attract consistent<br> buyers for SME's</p>
+   <p>Deliver measurable sales growth<br>through business solutions</p>
+   <p>Support Entrepreneurs with tools, leads<br>and buyer matchmaking</p>
+   <p>Build a thriving community through<br>partnerships, training and promotions</p>
+  </div>
+ </div>
+<!--Who we are-->
+ <div id = "whoWeAre">
+  <img class = "image2" src = "plan.jpg" alt = "guyExplainingPlan">
+  <div class = "wwa">
+   <h5>Elevating Sales Strategies</h5>
+   <h1>Who We Are</h1>
+   <p>CBM is a result driven business support brand commited<br>helping entrepreneurs and business owners increase sales.<br>
+   We specialize in connecting sellers with active, ready-to-buy<br>customers, reviving stagnant businesses and implementing<br>
+   strategies that deliver measurable growth. We don't just<br>promote - we bring sales.</p>
+   <h4>Our Team</h4>
+   <p>Our team of experts brings years of experience and a deep<br>understanding of the intricacies of financial markets and<br>
+   strategic consulting. We pride ourselves on providing<br>personalized solutions that meet the unique needs of each<br>client,
+   helping them navigate the complexities of business<br>growth</p>
+  </div>
+ </div>
+<!--What we do-->
+ <div id = "whatWeDo">
+  <div class = "wwdHead">
+   <h1>Our Sales-Driven-Services</h1>
+    <h3>What we do</h3>
+  </div>
+   <div class = "con">
+    <div class = "con1">
+     <h3>Buyer-seller connection</h3>
+      <p>We match businesses with active, ready-to-buy<br>customers</p>
+	</div>
+	<div class = "con2">
+     <h3>Sales Growth Support</h3>
+      <p>Tailored strategies to help you attract and convert<br>more buyers</p>
+	</div>
+	<div class = "con3">
+     <h3>Digital Visibility Boost</h3>
+      <p>Targeted promotions that drive real sales, not just<br> engagement</p>
+	</div>
+   </div>
+ </div>
+<!--Fliers-->
+ <div id = "flier">
+ </div>
+<!--Achievements-->
+ <div id = "achievements">
+ </div>
+<!--Voices of satisfaction-->
+ <div id = "voices">
+  <p class = "hold">eron</p>
+  <div class = "voiceTitle">
+   <h6>Client Success Stories</h6>
+   <h1>Voices of Satisfaction and Success</h1>
+  </div>
+   <div class = "voice1">
+    <p>@Adorable Outfit.Ng</p>
+	<p>CB, I've been feeling lazy to drop this review - Your ads didn't just work<br>
+    they exceeded my expectations. The results were far more than i imagined, your ad strategy brought<br>
+    impressive, significant growth - the turnout was massive! I don't know what kind of magic you're using<br>
+    but whatever it is - don't stop</p>
+   </div>
+   <div class = "voice2">
+    <p>@Adorable Outfit.Ng</p>
+	<p>Over 8 million Naira in Sales Made! Take a good look at this review - I<br>
+    made 8 million in sales just from CB Ad campaign.</p>
+   </div>
+   <div class = "voice3">
+    <p>@Jemi's Store</p>
+	<p>I made over 10 million naira in sales - from one single client! Because of CBMSBS<br>
+    they don't just run ads, they deliver wonders.</p>
+   </div>
+ </div>
+<!--Contact form-->
+ <div id = "form">
+  <p class = "hold">eron</p>
+  <div class = "formHead">
+   <h3>Ready to boost your sale?</h3>
+   <h1>Get in Touch</h1>
+  </div>
+  <div class = "formFill">
+   <form>
+    <label for = "company-name">Company name</label>
+	 <input type = "text" id = "company-name" name = "company-name">
+	<label for = "email">Email</label>
+	 <input type = "email" id = "email" name = "email">
+	<label for = "long-answer">Long answer</label>
+	 <textarea id = "long-answer" name = "long-answer"></textarea>
+	<button type = "submit">Submit</button>
+  </div>
+ </div>
+<!--Contacts-->
+ <div id = "contacts">
+ </div>
+<!--Footer-->
  <footer>
   <p>&copy; 2025 euron. All Rights Reserved.</p>
  </footer>
