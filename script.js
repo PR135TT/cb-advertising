@@ -1,5 +1,5 @@
   const flierImages = [
-    "womenTableDis.jpg",
+    "womenInBiz.jpg",
     "laptop.jpg",
     "girlTyping.jpg"
   ];
@@ -25,6 +25,6 @@
   // Auto-change image every 1 second
   //setInterval(() => {
 	  //changeSlide(1.5);
-  //}, 1000);
+ //}, 1000);
   // Optional: auto-play every 3s
   // setInterval(() => changeSlide(1), 3000);

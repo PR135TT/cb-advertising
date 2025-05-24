@@ -3,6 +3,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   font-family:Arial;
 }
 
 a {
@@ -398,11 +399,119 @@ form button:hover {
 
 /*Styling for Contacts*/
 #contacts  {
+	height:500px;
 	background-color:#001f2d;
+	color:white;
+	border:1px solid white;
+	border-bottom:black;
+}
+
+.top {
+	display:flex;
+}
+
+.wrap1, .wrap2, .wrap3 {
+	display:flex;
+	border:1px solid white;
+	font-size:30px;
+}
+
+.wrap1 {
+	width:50%;
+}
+
+.wrap1 h6 {
+	margin-left:10px;
+	margin-top:10px;
+}
+
+.wrap2 {
+	width:20%;
+}
+
+.wrap2 h6 {
+	margin-left:10px;
+	margin-top:5px;
+}
+
+.wrap3 {
+	width:30%;
+}
+
+.wrap3 h6 {
+	margin-left:15px;
+	margin-top:10px;
+}
+
+#contacts .top {
+	height:50px;
+}
+
+.socials {
+	border:1px solid white;
+	font-size:30px;
+	border-bottom:none;
+}
+
+.socials h6 {
+	margin-top:20px;
+}
+
+.socials img {
+	height:80px;
+	width:80px;
+	display:block;
+	margin-top:25px;
+	margin-left:40px;
+	margin-right:10px;
+}
+
+.sore {
+	display:flex;
+}
+
+.review {
+	font-family:Arial, Sans-serif;
+	margin-left:30%;
+	margin-top:10%;
+	border:none;
+}
+
+.review label {
+	font-size:20px;
+	display:block;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+.review textarea {
+	width:300%;
+	border:none;
+	border-bottom:1px solid white;
+	background-color:#001f2d;
+}
+
+.review button {
+	margin-top:20px;
+	width: 300%;
+    padding: 10px;
+    background-color:blue;
+    color:black;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+}
+
+.review button:hover {
+	background-color:white;
 }
 
 /*Styling for Footer*/
 
+footer {
+	text-align:left;
+	height:50px;
+}
 
 
 /*Styling for Android*/
@@ -410,100 +519,113 @@ form button:hover {
 @media (max-width: 768px) {
 	
   #nav-bar {
-	position:fixed;
     flex-direction: column;
-    height:auto;
     align-items: center;
- }
+    padding: 10px;
+  }
 
- #nav-bar ul {
-    display: flex;
+  #nav-bar ul {
     flex-wrap: wrap;
     justify-content: center;
- }
+  }
 
- #nav-bar ul li {
-    margin: 10px;
+  #nav-bar ul li {
     padding: 10px;
- }
+  }
 
- .logo img {
-    height: 130px;
-    width: auto;
- }
+  .cbmsbs {
+    font-size: 36px;
+  }
 
- .cbmsbs {
-    font-size: 48px;
-    text-align: center;
- }
+  .logo img {
+    height: 80px;
+  }
 
- #cbm {
+  #cbm {
     flex-direction: column;
-    height: auto;
- 	padding-top:350px;
- }
+    padding-top: 150px;
+  }
 
- .cbm1, .cbm2 {
-    width: 100%;
-    text-align: center;
- }
-
- .image1, .image2 {
+  .image1, .image2 {
     width: 100%;
     height: auto;
- }
+  }
 
- #statements {
+  .csb {
+    font-size: 36px;
+    padding: 20px;
+  }
+
+  #statements {
     flex-direction: column;
     align-items: center;
-    height: auto;
- }
+  }
 
- .mission, .vision, .core {
-	text-align:center;
-    margin: 20px 0;
-    width: 50%;
-    height: auto;
- }
+  .mission, .vision, .core {
+    width: 90%;
+    margin: 1rem 0;
+  }
 
- #whoWeAre {
+  #whoWeAre {
     flex-direction: column;
-    height: auto;
- }
+  }
 
- .wwa h1 {
-     font-size: 48px;
- }
+  .wwa h1 {
+    font-size: 32px;
+  }
 
- .wwa p {
+  .wwa p {
     margin-left: 0;
- }
+  }
 
- #whatWeDo .con {
+  .con {
     flex-direction: column;
     align-items: center;
- }
+  }
 
- .con1, .con2, .con3 {
+  .con1, .con2, .con3 {
     width: 90%;
-	margin-bottom:1px;
- }
+    margin-bottom: 10px;
+  }
 
- #voices h1 {
-    font-size: 36px;
- }
+  #voices h1 {
+    font-size: 28px;
+  }
 
- .voice1, .voice2, .voice3 {
+  .voice1, .voice2, .voice3 {
     flex-direction: column;
-    font-size: 16px;
- }
+    font-size: 14px;
+  }
 
- form {
+  form {
     width: 90%;
-    margin: 5% auto;
- }
+    margin: 2rem auto;
+  }
 
- .formHead h1 {
-    font-size: 36px;
- }
-}
+  .formHead h1 {
+    font-size: 28px;
+  }
+
+  #contacts .top, .sore {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .wrap1, .wrap2, .wrap3 {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .socials img {
+    margin: 1rem;
+  }
+
+  .review {
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .review textarea, .review button {
+    width: 90%;
+  }
