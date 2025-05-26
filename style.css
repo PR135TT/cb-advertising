@@ -286,7 +286,8 @@ a {
   justify-content:center;
   display:flex;
   align-items:center;
-  transition: background-color 0.5s ease, opacity 0.5s ease;
+  transition:opacity 1s ease out;
+  opacity: 1;
 }
 
 /*Styling for Voices*/
@@ -601,6 +602,39 @@ footer {
     width: 90%;
 	margin-bottom:1px;
  }
+ 
+ 
+/*Styling for Flier*/
+#flier {
+  position: relative;
+  height: 650px;
+  width:100%;
+  background-color: #001f2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#flier-image {
+  width:30%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*Styling for Achievements*/
+#achievements  {
+  color:white;
+  font-size: 5rem;
+  text-align: center;
+  width:100%;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  transition:opacity 1s ease out;
+  opacity: 1;
+}
 
  #voices h1 {
     font-size: 36px;

@@ -23,9 +23,9 @@ setInterval(() => {
 }, 3000); // Change image every 3 seconds
 
 const achievements = [
-  { text: "ACHIEVEMENTS", color: "#5E85FF" },
+ { text: "ACHIEVEMENTS", color: "#5E85FF" },
   { text: "At CBM Sales & Biz Solution,we don't just promote -- we deliver results that speak for themselves:", color: "#5E85FF" },
-  { text: "60M+ in Sales Generated for vendors through powerful promos and campaigns", color: "#5E85FF" },
+   { text: "60M+ in Sales Generated for vendors through powerful promos and campaigns", color: "#5E85FF" },
     { text: "1,200+ Business Owners Transformed from LOW SALES to consistent orders", color: "#5E85FF" },
 	  { text: "3,000+ BUYERS connected directly to vendors in our SALES network", color: "#5E85FF" },
 	    { text: "100+ Orders from One Promo -- proven, tested, and repeatable", color: "#5E85FF" },
@@ -36,6 +36,7 @@ const achievements = [
 
 let achievementIndex = 0;
 const achievementsDiv = document.getElementById("achievements");
+achievementsDiv.textContent.transition = "opacity 1s ease-out";
 
 function showAchievement(index) {
   achievementIndex = (index + achievements.length) % achievements.length;
