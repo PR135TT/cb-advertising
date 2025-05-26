@@ -3,7 +3,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family:Arial;
+   font-family:Roboto Thin;
 }
 
 a {
@@ -37,8 +37,8 @@ a {
 .cbmsbs {
 	color:white;
 	font-size:100px;
-	font-family:"Times New Roman", Times, serif;
-	font-weight:none;
+	font-family:Roboto Thin;
+	font-weight:100;
 }
 
 #nav-bar ul li a {
@@ -107,9 +107,9 @@ a {
 
 .weHelp {
 	color:yellow;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:Lato Thin;
 	font-size:20px;
-	font-weight:normal;
+	font-weight:100;
 }
 
 .csb {
@@ -117,9 +117,11 @@ a {
 	font-size:60px;
 }
 
+
 /*Styling for mission and other statements*/
 #statements {
-	background-color:black;
+	height:650px;
+	background-color:#001f2d;
 	display:flex;
 	opacity:0.7;
 	font-family:Arial;
@@ -127,6 +129,10 @@ a {
 
 #statements h3 {
 	padding-bottom:20px;
+}
+
+#statements p {
+	font-size:20px;
 }
 
 .mission {
@@ -160,7 +166,7 @@ a {
 	background-color:yellow;
 	color:red;
 	width:300px;
-	height:420px;
+	height:430px;
 	padding:20px;
 	margin-left:40px;
 	margin-top:8%;
@@ -176,6 +182,7 @@ a {
 
 /*Styling for Who We Are*/
 #whoWeAre  {
+	height:650px;
 	background-color:white;
 	display:flex;
 	border:1px solid black;
@@ -188,7 +195,7 @@ a {
 }
 
 .wwa {
-	margin-left:30px;
+	margin-left:10px;
 	padding:20px;
 }
 
@@ -201,6 +208,7 @@ a {
 }
 
 .wwa p {
+	font-size:18px;
 	margin-left:40px;
 	margin-top:30px;
 }
@@ -212,6 +220,7 @@ a {
 
 /*Styling for What We Do*/
 #whatWeDo  {
+	height:600px;
 	background-color:white;
 }
 
@@ -253,6 +262,7 @@ a {
 #flier {
   position: relative;
   height: 650px;
+  width:100%;
   background-color: #001f2d;
   display: flex;
   justify-content: center;
@@ -260,46 +270,28 @@ a {
   overflow: hidden;
 }
 
-#flier img {
-  max-width: 100%;
+#flier-image {
+  width:30%;
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.flier-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(255,255,255,0.7);
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 10px;
-  z-index: 10;
-  border-radius: 50%;
-}
-
-.flier-arrow.left {
-  left: 20px;
-}
-
-.flier-arrow.right {
-  right: 20px;
-}
-
-.flier-arrow:hover {
-  background-color: white;
-}
-
-
 /*Styling for Achievements*/
 #achievements  {
-	background-color:grey;
+  color:white;
+  font-size: 5rem;
+  text-align: center;
+  width:100%;
+  justify-content:center;
+  display:flex;
+  align-items:center;
+  transition: background-color 0.5s ease, opacity 0.5s ease;
 }
 
 /*Styling for Voices*/
 #voices  {
+	height:800px;
 	background-color:#001f2d;
 	color:white;
 }
@@ -317,7 +309,7 @@ a {
 }
 
 #voices h6 {
-	margin-top:9%;
+	margin-top:6%;
 	margin-left:40px;
 	font-size:20px;
 }
@@ -328,6 +320,7 @@ a {
 }
 
 .voice1, .voice2, .voice3 {
+	height:200px;
 	padding:30px;
 	display:flex;
 	border-bottom:1px solid white;
@@ -377,8 +370,6 @@ form {
     padding: 10px;
     margin-bottom: 20px;
 	border:none;
-	border:none;
-    border-bottom: 1px solid black;
     border-radius: 3px;
 }
 
@@ -404,9 +395,11 @@ form button:hover {
 	color:white;
 	border:1px solid white;
 	border-bottom:black;
+	font-family:Roboto Thin;
 }
 
 .top {
+	font-family:Roboto Thin;
 	display:flex;
 }
 
@@ -414,13 +407,16 @@ form button:hover {
 	display:flex;
 	border:1px solid white;
 	font-size:30px;
+	font-family:Roboto Thin;
 }
 
 .wrap1 {
+	font-family:Roboto Thin;
 	width:50%;
 }
 
 .wrap1 h6 {
+    font-family:Roboto Thin;
 	margin-left:10px;
 	margin-top:10px;
 }
@@ -430,6 +426,7 @@ form button:hover {
 }
 
 .wrap2 h6 {
+	font-family:Roboto Thin;
 	margin-left:10px;
 	margin-top:5px;
 }
@@ -439,6 +436,7 @@ form button:hover {
 }
 
 .wrap3 h6 {
+    font-family:Roboto Thin;
 	margin-left:15px;
 	margin-top:10px;
 }
@@ -472,7 +470,7 @@ form button:hover {
 
 .review {
 	font-family:Arial, Sans-serif;
-	margin-left:30%;
+	margin-left:10%;
 	margin-top:10%;
 	border:none;
 }
@@ -484,22 +482,30 @@ form button:hover {
 	margin-bottom:20px;
 }
 
+.review #review {
+	background-color:#001f2d;
+	border-bottom:1px solid white;
+}
+
 .review  {
-	width:300%;
+	width:80%;
 	border:none;
 	border-bottom:1px solid white;
 	background-color:#001f2d;
 }
 
 .review button {
+	font-family:Sans-serif;
 	margin-top:20px;
-	width: 300%;
+	width: 80%;
+	height:60px;
     padding: 10px;
     background-color:blue;
     color:black;
     border:none;
     border-radius:3px;
     cursor:pointer;
+	margin-left:90px;
 }
 
 .review button:hover {
@@ -513,8 +519,6 @@ footer {
 	height:50px;
 }
 
-
-/*Styling for Android*/
 /* Responsive tweaks for Android and smaller screens */
 @media (max-width: 768px) {
 	
@@ -693,6 +697,9 @@ footer {
 	margin-left:15%;
 	margin-top:10%;
 	border:none;
+	width:50%;
+	border-bottom:1px solid white;
+	background-color:#001f2d;
 }
 
 .review label {
@@ -702,16 +709,9 @@ footer {
 	margin-bottom:20px;
 }
 
-.review  {
-	width:50%;
-	border:none;
-	border-bottom:1px solid white;
-	background-color:#001f2d;
-}
-
 .review button {
 	margin-top:20px;
-	width: 100%;
+	width: 90%;
     padding: 10px;
     background-color:blue;
     color:black;
