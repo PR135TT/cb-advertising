@@ -593,31 +593,42 @@ footer {
     margin-left: 0;
  }
 
- #whatWeDo .con {
+  #whatWeDo {
+    padding: 10px;
+  }
+  .wwdHead h1 {
+    font-size: 2.5rem;
+    margin-left: 10px;
+  }
+  .wwdHead h3 {
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }
+  .con {
     flex-direction: column;
     align-items: center;
- }
-
- .con1, .con2, .con3 {
+	margin-top:20px;
+  }
+  .con1, .con2, .con3 {
     width: 90%;
-	margin-bottom:1px;
- }
- 
+    margin: 10px 0;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
  
 /*Styling for Flier*/
 #flier {
-  position: relative;
-  height: 650px;
-  width:100%;
+  height: 500px;
+  width:90%;
   background-color: #001f2d;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  margin-top:20px;
 }
 
 #flier-image {
-  width:30%;
+  width:100%;
   max-height: 100%;
   object-fit: cover;
   border-radius: 10px;
@@ -626,7 +637,7 @@ footer {
 /*Styling for Achievements*/
 #achievements  {
   color:white;
-  font-size: 5rem;
+  font-size: 2rem;
   text-align: center;
   width:100%;
   justify-content:center;
@@ -669,11 +680,13 @@ footer {
 .wrap1, .wrap2, .wrap3 {
 	display:flex;
 	border:1px solid white;
-	font-size:20px;
+	font-size:15px;
 }
 
 .wrap1 {
-	width:50%;
+	width:60%;
+	font-size:14px;
+	height:60px;
 }
 
 .wrap1 h6 {
@@ -682,6 +695,7 @@ footer {
 }
 
 .wrap2 {
+	height:60px;
 	width:20%;
 }
 
@@ -691,7 +705,8 @@ footer {
 }
 
 .wrap3 {
-	width:30%;
+	width:20%;
+	height:60px;
 }
 
 .wrap3 h6 {
@@ -700,10 +715,12 @@ footer {
 }
 
 #contacts .top {
-	height:50px;
+	height:60px;
+	border-top:none;
 }
 
 .socials {
+	border-top:none;
 	border:1px solid white;
 	font-size:30px;
 	border-bottom:none;
@@ -714,12 +731,11 @@ footer {
 }
 
 .socials img {
-	height:80px;
-	width:80px;
+	height:70px;
+	width:70px;
 	display:block;
 	margin-top:25px;
-	margin-left:40px;
-	margin-right:10px;
+	margin-left:20px;
 }
 
 .sore {
@@ -728,7 +744,7 @@ footer {
 
 .review {
 	font-family:Arial, Sans-serif;
-	margin-left:15%;
+	margin-left:10%;
 	margin-top:10%;
 	border:none;
 	width:50%;
@@ -739,13 +755,13 @@ footer {
 .review label {
 	font-size:20px;
 	display:block;
-	padding-bottom:20px;
+	padding-bottom:10px;
 	margin-bottom:20px;
 }
 
 .review button {
 	margin-top:20px;
-	width: 90%;
+	width: 50%;
     padding: 10px;
     background-color:blue;
     color:black;
