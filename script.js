@@ -49,3 +49,5 @@ showAchievement(achievementIndex);
 setInterval(() => {
   showAchievement(achievementIndex + 1);
 }, 3000); // Change text every 3 seconds
+
+

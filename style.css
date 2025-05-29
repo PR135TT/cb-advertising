@@ -523,93 +523,98 @@ footer {
 /* Responsive tweaks for Android and smaller screens */
 @media (max-width: 768px) {
 	
-  #nav-bar {
+#nav-bar {
 	position:fixed;
     flex-direction: column;
-    height:auto;
+    height:39%;
     align-items: center;
- }
+	width:100%;
+}
 
- #nav-bar ul {
-    display: flex;
+#nav-bar ul {
+    display:none;
     flex-wrap: wrap;
     justify-content: center;
- }
+}
 
- #nav-bar ul li {
+#nav-bar ul li {
     margin: 10px;
     padding: 10px;
- }
+}
 
- .logo img {
+.logo img {
     height: 130px;
     width: auto;
- }
+}
 
- .cbmsbs {
+.cbmsbs {
     font-size: 48px;
     text-align: center;
- }
+}
 
- #cbm {
+#cbm {
     flex-direction: column;
-    height: auto;
+    height: 50%;
  	padding-top:350px;
- }
+}
 
- .cbm1, .cbm2 {
+.cbm1, .cbm2 {
     width: 100%;
     text-align: center;
- }
+}
 
- .image1, .image2 {
+.image1, .image2 {
     width: 100%;
     height: auto;
- }
+}
 
- #statements {
+#statements {
     flex-direction: column;
     align-items: center;
     height: auto;
- }
+}
 
- .mission, .vision, .core {
+.mission, .vision, .core {
 	text-align:center;
     margin: 20px 0;
     width: 50%;
     height: auto;
- }
+}
 
- #whoWeAre {
+#whoWeAre {
     flex-direction: column;
     height: auto;
- }
+}
 
- .wwa h1 {
+.wwa h1 {
      font-size: 48px;
- }
+}
 
- .wwa p {
+.wwa p {
     margin-left: 0;
- }
+}
 
-  #whatWeDo {
+#whatWeDo {
     padding: 10px;
-  }
-  .wwdHead h1 {
+}
+
+.wwdHead h1 {
     font-size: 2.5rem;
     margin-left: 10px;
-  }
-  .wwdHead h3 {
+}
+
+.wwdHead h3 {
     font-size: 1.5rem;
     margin-left: 5%;
-  }
-  .con {
+}
+  
+.con {
     flex-direction: column;
     align-items: center;
 	margin-top:20px;
-  }
-  .con1, .con2, .con3 {
+}
+
+.con1, .con2, .con3 {
     width: 90%;
     margin: 10px 0;
     border-right: none;
@@ -626,7 +631,6 @@ footer {
   align-items: center;
   margin-top:20px;
   margin-bottom:20px;
-  margin-left:20px;
 }
 
 #flier-image {
@@ -642,10 +646,8 @@ footer {
   font-size: 2rem;
   text-align: center;
   width:100%;
-  justify-content:center;
-  display:flex;
   align-items:center;
-  transition:opacity 1s ease out;
+  transition:opacity 2s ease out;
   opacity: 1;
 }
 
@@ -673,21 +675,17 @@ footer {
 	color:white;
 	border:1px solid white;
 	border-bottom:black;
-}
-
-.top {
-	display:flex;
+	display:block;
 }
 
 .wrap1, .wrap2, .wrap3 {
-	display:flex;
 	border:1px solid white;
 	font-size:15px;
 }
 
 .wrap1 {
 	width:60%;
-	font-size:14px;
+	font-size:auto;
 	height:60px;
 }
 
@@ -738,10 +736,6 @@ footer {
 	display:block;
 	margin-top:25px;
 	margin-left:20px;
-}
-
-.sore {
-	display:flex;
 }
 
 .review {
