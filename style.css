@@ -18,12 +18,15 @@ a {
 
 /*Styling for navigation bar*/
 #nav-bar {
-	height:100px;
 	z-index:1000;
 	background-color:#001f2d;
 	height:200px;
 	display:flex;
 	justify-content:space-between;
+}
+
+.nav-toggle, #sidebar {
+  display: none;
 }
 
 #nav-bar .cbmsbs {
@@ -523,24 +526,63 @@ footer {
 /* Responsive tweaks for Android and smaller screens */
 @media (max-width: 768px) {
 	
-#nav-bar {
-	position:fixed;
-    flex-direction: column;
-    height:39%;
-    align-items: center;
-	width:100%;
-}
+ .nav-inline {
+    display: none;
+  }
+  
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    margin-top: 70px;
+    cursor: pointer;
+  }
 
-#nav-bar ul {
-    display:none;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#nav-bar ul li {
+  /* Sidebar styling */
+  #sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -260px;
+    width: 200px;
+    height: 100%;
+    background-color: #001f2d;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    transition: left 0.3s ease;
+    z-index: 2000;
+  }
+  
+  #sidebar.active {
+    left: 0;
+  }
+  
+  #sidebarClose {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    float: right;
     margin: 10px;
-    padding: 10px;
-}
+    cursor: pointer;
+  }
+  
+  .nav-sidebar {
+    list-style: none;
+    padding: 50px 20px;
+  }
+  
+  .nav-sidebar li {
+    margin-bottom: 20px;
+  }
+  
+  .nav-sidebar li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
 
 .logo img {
     height: 130px;
@@ -737,7 +779,7 @@ footer {
 	margin-top:25px;
 	margin-left:20px;
 }
-
+0.
 .review {
 	font-family:Arial, Sans-serif;
 	margin-left:10%;

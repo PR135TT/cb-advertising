@@ -50,4 +50,25 @@ setInterval(() => {
   showAchievement(achievementIndex + 1);
 }, 3000); // Change text every 3 seconds
 
+const sidebar       = document.getElementById('sidebar');
+const toggleBtn     = document.getElementById('sidebarToggle');
+const closeBtn      = document.getElementById('sidebarClose');
+
+// Open sidebar
+toggleBtn.addEventListener('click', () => {
+  sidebar.classList.add('active');
+});
+
+// Close sidebar
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+});
+
+// Optional: close when clicking a link
+document.querySelectorAll('#sidebar .nav-sidebar a')
+  .forEach(link => link.addEventListener('click', () => {
+    sidebar.classList.remove('active');
+  }));
+
+
 
