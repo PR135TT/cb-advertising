@@ -18,11 +18,13 @@ a {
 
 /*Styling for navigation bar*/
 #nav-bar {
-	z-index:1000;
-	background-color:#001f2d;
-	height:200px;
-	display:flex;
-	justify-content:space-between;
+  z-index:1000;
+  background-color:#001f2d;
+  min-height: 80px; /* or 100px max */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
 }
 
 .nav-toggle, #sidebar {
@@ -597,7 +599,6 @@ footer {
 #cbm {
     flex-direction: column;
     height: 50%;
- 	padding-top:350px;
 }
 
 .cbm1, .cbm2 {
