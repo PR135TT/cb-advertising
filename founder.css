@@ -1,76 +1,386 @@
 body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
-  color: #333;
+	margin-top:0;
+	background-color:#001f2d;
 }
 
-.founder-section {
-  display: flex;
-  height: 100vh;
+/*Styling for the header*/
+header {
+	background:linear-gradient(to right, #001f2d 80%, grey);
+	display:flex;
+	justify-content:space-between;
+}
+
+.cbmsbs {
+	padding-left:30px;
+	color:white;
+	font-size:100px;
+	font-family:Arial;
+	font-weight:100;
+}
+
+/*styling for logo image and home icon*/
+.logoImage {
+	height:300px;
+	width:300px;
+}
+
+.homeIcon {
+	padding-top:50px;
+	height:150px;
+	width:150px;
+}
+
+.homeIcon:hover {
+	opacity:0.1;
+}
+
+/*styling for the founder information*/
+#founderInfo {
+	padding-top:20px;
+	display:flex;
+}
+
+.founderImage {
+	padding-left:80px;
+	height:550px;
+	width:600px;
+}
+
+.founderDetails {
+	padding-top:50px;
+	padding-left:170px;
+	color:white;
+}
+
+.founderDetails h1 {
+	font-family:Helvetica;
+	font-size:55px;
+}
+
+.founderDetails p {
+	font-family:Helvetica;
+	font-size:15px;
+}
+
+/*styling for social links*/
+.social {
+	display:flex;
+}
+
+.social img {
+	padding-right:15px;
+	width:80px;
+	height:80px;
+}
+
+/*styling for contacts*/
+#contact {
+	color:white;
+	display:flex;
+	padding-left:20%;
+	padding-top:4%;
+}
+
+#contact h1 {
+	font-size:50px;
+}
+
+#contact a {
+	text-decoration:none;
+	color:inherit;
+	font-size:20px;
+	display:block;
+}
+
+.contactMe {
+	padding-top:4%;
+	padding-left:10%;
+}
+
+/*Styling for Contacts*/
+#contacts  {
+	height:500px;
+	background-color:#001f2d;
+	color:white;
+	border:1px solid white;
+	border-top:none;
+	border-bottom:black;
+	font-family:Roboto Thin;
+}
+
+.top {
+	font-family:Roboto Thin;
+	display:flex;
+}
+
+.wrap1, .wrap2, .wrap3 {
+	display:flex;
+	border:1px solid white;
+	font-size:30px;
+	font-family:Roboto Thin;
+}
+
+.wrap1 {
+	font-family:Roboto Thin;
+	width:50%;
+}
+
+.wrap1 h6 {
+    font-family:Roboto Thin;
+	margin-left:10px;
+	margin-top:10px;
+}
+
+.wrap2 {
+	width:20%;
+}
+
+.wrap2 h6 {
+	font-family:Roboto Thin;
+	margin-left:10px;
+	margin-top:5px;
+}
+
+.wrap3 {
+	width:30%;
+}
+
+.wrap3 h6 {
+    font-family:Roboto Thin;
+	margin-left:15px;
+	margin-top:10px;
+}
+
+#contacts .top {
+	height:50px;
+}
+
+.socials {
+	border:1px solid white;
+	font-size:30px;
+	border-bottom:none;
+}
+
+.socials h6 {
+	margin-top:20px;
+}
+
+.socials img {
+	height:80px;
+	width:80px;
+	display:block;
+	margin-top:25px;
+	margin-left:40px;
+	margin-right:10px;
+}
+
+.sore {
+	display:flex;
+}
+
+.review {
+	font-family:Arial, Sans-serif;
+	margin-left:10%;
+	margin-top:10%;
+	border:none;
+}
+
+.review label {
+	font-size:20px;
+	display:block;
+	padding-bottom:20px;
+	margin-bottom:20px;
+}
+
+.review {
+	background-color:#001f2d;
+	border-bottom:1px solid white;
+}
+
+.review  {
+	width:80%;
+	border:none;
+	border-bottom:1px solid white;
+	background-color:#001f2d;
+}
+
+textarea {
   width: 100%;
+  height: 80px;
+  background-color: #001f2d;
+  color: white;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  resize: vertical;
 }
 
-.founder-image {
-  width: 50%;
-  border-radius:50%;
+.review button {
+	font-family:Sans-serif;
+	margin-top:20px;
+	width: 80%;
+	height:60px;
+    padding: 10px;
+    background-color:blue;
+    color:black;
+    border:none;
+    border-radius:3px;
+    cursor:pointer;
+	margin-left:90px;
 }
 
-.founder-text {
-  width: 50%;
-  padding: 4rem;
+.review button:hover {
+	background-color:white;
+}
+
+/*Styling for Footer*/
+
+footer {
+	background:linear-gradient(to right, grey 33%, black);
+	text-align:left;
+	height:50px;
+}
+
+@media (max-width: 768px) {
+
+ header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+
+ .cbmsbs {
+  font-size: 10vw;
+  padding: 10px 0;
+ }
+
+ .logoImage,
+ .homeIcon {
+  width: 120px;
+  height: auto;
+ }
+
+ .homeIcon {
+  padding-top: 10px;
+ }
+
+ #founderInfo {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ }
+
+ .founderImage {
+  width: 90%;
+  height: auto;
+  padding: 0;
+ }
+
+ .founderDetails {
+  padding: 20px 10px 0;
+ }
+
+ .founderDetails h1 {
+  font-size: 7vw;
+ }
+
+ .founderDetails p {
+  font-size: 4vw;
+ }
+
+ .social {
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+ }
+
+ .social img {
+  width: 50px;
+  height: 50px;
+  padding-right: 0;
+ }
+
+ #contact {
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+ }
+
+ #contact h1 {
+  font-size: 6vw;
+ }
+
+ #contact a {
+  font-size: 4vw;
+ }
+
+ .contactMe {
+  padding: 10px 0 0;
+ }
+
+ #contacts {
+  display:none;
+  height: auto;
+  padding: 20px 10px 60px;  
+ }
+ 
+ #contacts .top {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: #fff;
 }
 
-.founder-text h1 {
-  font-size: 3rem;
-  color: #000;
-  margin-bottom: 0.5rem;
-}
+ .top {
+  flex-direction: column;
+ }
 
-.founder-text h2 {
-  font-size: 1.5rem;
-  color: #663399;
-  margin-bottom: 1.5rem;
-}
+ .wrap1,
+ .wrap2,
+ .wrap3 {
+  display:block;
+  width: 100%;
+  font-size: 5vw;
+  padding: 10px;
+ }
 
-.founder-text p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.2rem;
-  color: #444;
-}
+ .wrap1 h6,
+ .wrap2 h6,
+ .wrap3 h6 {
+  margin: 5px 0;
+ }
 
-@media screen and (max-width: 768px) {
-  .founder-section {
-    flex-direction: column;
-  }
+ .sore {
+  display:none;
+  flex-direction: column;
+  align-items: center;
+ }
 
-  .founder-image,
-  .founder-text {
-    width: 80%;
-  }
-  
-  img{
-	  align-items:center;
-	  display:flex;
-	  justify-content:center;
-  }
-  
-  .founder-image {
-	  display:flex;
-	  height:auto;
-	  width:auto;
-	  border-radius:50%;
-	  justify-content:center;
-	  align-items:center;
-	  height:100vh;
-  }
+ .review {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0;
+ }
 
-  .founder-text {
-    padding: 2rem;
-  }
+ .review label {
+  font-size: 4vw;
+ }
+
+ .review textarea {
+  width: 100%;
+  height: 80px;
+  font-size: 4vw;
+ }
+
+ .review button {
+  width: 100%;
+  margin-left: 0;
+  font-size: 4vw;
+ }
+
+ footer {
+  font-size: 3.5vw;
+  text-align: center;
+  height: auto;
+  padding: 10px 0;
+ }
 }
