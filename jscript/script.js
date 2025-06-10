@@ -1,11 +1,13 @@
+console.log("You know eron Priest Karibo made this right");
+
 const flierImages = [
-  "gallery1.jpg",
-  "gallery2.jpg",
-  "gallery3.jpg",
-  "gallery4.jpg",
-  "gallery5.jpg",
-  "gallery6.jpg",
-  "gallery7.jpg"
+  "images/gallery1.jpg",
+  "images/gallery2.jpg",
+  "images/gallery3.jpg",
+  "images/gallery4.jpg",
+  "images/gallery5.jpg",
+  "images/gallery6.jpg",
+  "images/gallery7.jpg"
 ];
 
 let flierIndex = 0;
