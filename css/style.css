@@ -336,7 +336,7 @@ a {
 
 /*Styling for Form*/
 #form {
-	background-image:url("images/laptop.jpg");
+	background-image:url("../images/laptop.jpg");
 	background-size:cover;
 	padding: 20px;
     border-radius: 5px;
