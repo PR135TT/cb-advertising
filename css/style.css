@@ -11,6 +11,18 @@ a {
 	color:inherit;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 2s ease-out, transform 1.5s ease-out;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInUp 2s ease-out;
+}
+
 /*styling for all id's */
 #cbm, #statements, #whatWeDo, #whoWeAre, #flier, #achievements, #voices, #form, #contacts {
 	height:650px;
@@ -666,6 +678,7 @@ footer {
  
 /*Styling for Flier*/
 #flier {
+  margin:auto;
   height: 500px;
   width:90%;
   background-color: white;
