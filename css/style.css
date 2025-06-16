@@ -152,6 +152,17 @@ a {
 	font-size:20px;
 }
 
+.iconflex {
+	display:flex;
+}
+
+.icons {
+	height:50px;
+	width:70px;
+	padding-left:20px;
+	padding-bottom:10px;
+}
+
 .mission {
 	border:3px solid yellow;
 	background-color:yellow;
@@ -183,7 +194,7 @@ a {
 	background-color:yellow;
 	color:red;
 	width:300px;
-	height:430px;
+	height:450px;
 	padding:20px;
 	margin-left:40px;
 	margin-top:8%;
